@@ -1,11 +1,11 @@
-About instaloader
-=================
+About instaloader-feedstock
+===========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/instaloader-feedstock/blob/main/LICENSE.txt)
 
 Home: https://instaloader.github.io/
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/instaloader-feedstock/blob/main/LICENSE.txt)
 
 Summary: Download pictures (or videos) along with their captions and other metadata from Instagram.
 
