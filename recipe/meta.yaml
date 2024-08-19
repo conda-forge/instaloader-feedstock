@@ -1,5 +1,5 @@
 {% set name = "instaloader" %}
-{% set version = "4.12" %}
+{% set version = "4.13" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/instaloader-{{ version }}.tar.gz
-  sha256: 0e3fa65dd4b033f2ef6022a04f95fec18e0258535aee985d0643895713f2eec3
+  sha256: 49b15c3c41ba9287ddecacb57c5fdd1ee706107117b4b8ddd9ccb56ab75c573c
 
 build:
   entry_points:
