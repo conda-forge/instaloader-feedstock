@@ -6,22 +6,22 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/instaloader-{{ version }}.tar.gz
-  sha256: 754425eb17af44ce4bb6056e4eacd044a518d13b5efc11b9d80eb229bb96c652
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/instaloader-{{ version }}.tar.gz
+  sha256: 36774ea1076eeb236f8782d221e3737f71ddc023042f0b13761429ef137f1133
 
 build:
   entry_points:
     - instaloader=instaloader.__main__:main
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
-    - python >=3.8
+    - python {{ python_min }}
     - pip
   run:
-    - python >=3.8
+    - python >={{ python_min }}
     - requests >=2.4
 
 test:
@@ -32,6 +32,7 @@ test:
     - instaloader --help
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://instaloader.github.io/
